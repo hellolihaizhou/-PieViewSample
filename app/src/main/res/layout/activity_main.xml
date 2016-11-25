@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lihaizhou.piechartdemo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/fruit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="5">
+        <TextView
+            android:id="@+id/apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="苹果:10个 "
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/ori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="橙子:15个 "
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/ban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="香蕉:20个 "
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/taozi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桃子:30个 "
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/caomei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="草莓:8个 "
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <com.lihaizhou.piechartdemo.PieChartView
+        android:id="@+id/pie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
